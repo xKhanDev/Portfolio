@@ -1,0 +1,617 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    margin:0px auto;
+    width: 90%;
+    height: 100vh;
+    background-color: white;
+    color: white;
+    z-index: -1;
+}
+/* -------------------navigation bar------------------------ */
+.container nav{
+    background-color:#FC7F03;
+    width: 100%;
+    height: 6rem;
+    box-shadow:0px 0px 5px #333333;
+}
+nav ul li{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 30%;
+    margin-top: 1.4rem;
+    margin-left: 3rem;
+}
+nav ul li a{
+    z-index: 4;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------Nav Hover------------------ */
+nav ul li a:hover{
+    /* background-color:#C35527; */
+    border-bottom:2px solid white;
+    z-index: 4;
+
+}
+
+/* -------------logo----------------- */
+.container h2{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+.container h2 span{
+    color: white;
+    font-size:4rem ;
+    font-weight: 700;
+}
+
+/* --------------Navigation Button------------------------ */
+#Hire-me{
+    color: white;
+    background-color: rgb(252, 127, 3);
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 9rem;
+    height: 4rem;
+    position: absolute;
+    top: 7%;
+    z-index: 4;
+    right: 10%;
+    margin-top: -37px;
+    border: none;
+    border-radius: 8px;
+    padding: 3px 6px;
+    box-shadow: 0px 0px 8px rgb(190, 96, 2);
+    cursor: pointer;
+}
+
+/* --------------Main Section------------------------------ */
+.main-section{
+    width: 100%;
+    height: 100vh;
+}
+
+/* ----------background image------ */
+#bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -2.2rem;
+    width: 60rem;
+    height: 98vh;
+    position: absolute;
+    right: 4%;
+    z-index: 2;
+}
+/* ---------my Image----------------------------------- */
+.main-section span img{
+    width: 55rem;
+    height: auto;
+    position: absolute;
+    bottom: 0%;
+    right: 2%;
+    z-index: 3;
+    transition: 1s linear;
+}
+
+/* -------------------------Roller image-------------------- */
+#roller{
+    margin-top:5rem ;
+    width: 45rem;
+    height: auto;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    animation: roll 50s infinite linear;
+}
+/* ---------roller animation------------------------------------ */
+@keyframes roll {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+  }
+
+/* -------------Paragraph Section------------------------------------------ */
+.text-section{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    width: 50%;
+    height: auto;
+}
+.text-section .para1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top:-10px;
+}
+.text-section .para1 span{
+    font-size:4rem ;
+    font-weight: 700;
+    text-transform:uppercase ;
+}
+
+/* ------------paragraph under name----------------- */
+.text-section .para2{
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+/* ------------------Social Icons------------------------------- */
+.social-icons{
+    position: absolute;
+    bottom: 22%;
+    left: 10%;
+    margin-left: 1rem;
+    z-index: 5;
+}
+
+.social-icons a i{
+    color: black;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border:1px solid #FC7F03;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+/* ------------------hover on social icons----------------- */
+.social-icons i:hover{
+    box-shadow:.2px .2px 5px #FC7F03;
+}
+#twitter i:hover{
+    color: #1DA1F2;
+}
+#insta i:hover{
+    color:  #E4405F;
+}
+#yt i:hover{
+    color:  #FF0000;
+}
+#fb i:hover{
+   color: #1877F2;
+}
+
+/* -----------------------Main Section buttons---------------------------- */
+.main-section button{
+    font-size: 1.5rem;
+    width: 15rem;
+    color: white;
+    background-color: #FC7F03;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 9%;
+    bottom: 10%;
+
+}
+.main-section .btn2{
+    color: black;
+    background-color: white;
+    margin-left:16rem ;
+    box-shadow:1px 1px 10px 2px #333333;
+}
+.container button:hover{
+    box-shadow:1px 1px 10px 2px #FC7F03;
+    transform: rotate(3deg);
+}
+
+/* ----------------------About Section-------------------------------------------- */
+.about-section{
+    width: 100%;
+    height: 100vh;
+    margin: 5rem auto 0rem;
+    position: relative;
+    background-color:  #555555;
+    border-radius: 10px;
+}
+.about-section img{
+    width:40rem ;
+    height: auto;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+}
+
+.about-section p{
+    color: white;
+    font-size: 2rem;
+    background-color: F5F5F5;
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    top: 33%;
+}
+.about-section span{
+    color: #FC7F03;
+    font-size: 2.2rem;
+}
+
+#about-btn{
+    font-size: 2rem;
+    width: 15rem;
+    color: white;
+    background-color: #FC7F03;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 25%;
+    bottom: 15%;
+}
+#about-btn:hover{
+    box-shadow:1px 1px 10px 2px #FC7F03;
+    transform: rotate(3deg);
+}
+
+/* -----------------------Skill Section------------------------------- */
+.skills{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 10px;
+
+}
+.skills #skill-head{
+    width: 20rem;
+    height: 4.5rem;
+    padding: 5px;
+    box-shadow:1px 1px 10px #FC7F03;
+    font-size: 2.5rem;
+    font-weight: 800;
+    position: absolute;
+    left: 40%;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+.skills h2{
+    font-size: 2rem;
+    color: #FC7F03;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.skills h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
+/* ----------------LANGUAGES Learned------------------------------------- */
+.languages-learn{
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+/* -----------------Technical Skills----------------------------------------- */
+.technical-skill{
+    width: 50%;
+    position: absolute;
+    right:0%;
+    top: 15%;
+}
+
+/* -----------------------------------------prgress styling------------------------- */
+.technical-skill .progress-bar,
+.languages-learn .progress-bar{
+    width: 80%;
+    height: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #959595;
+}
+
+/* ------------------------------upper color on progress-------------------------- */
+.technical-skill div, .languages-learn div{
+    margin-top: 5px;
+    height: 10px;
+    border-radius: 8px;
+    width:0%;
+    background-color: #FC7F03;
+}
+
+/* --------------------Persentage styling---------------------------- */
+.skills div span{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    border:none;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    margin-right: -20px;
+}
+.skills div span{
+    border: 1px solid #FC7F03;
+    box-shadow: 5px 5px 10px gray,-1px -1px 10px gray;
+}
+
+/* --------------------All Classes Animation name setting------------------------- */
+.html{
+    animation: html 2s linear forwards;
+}
+.css{
+    animation: css 2s linear forwards;
+}
+.js{
+    animation: js 2s linear forwards;
+}
+.sol{
+    animation: sol 2s linear forwards;
+}
+.python{
+    animation: python 2s linear forwards;
+}
+.youtube{
+    animation: yt 2s linear forwards;
+}
+.seo{
+    animation: seo 2s linear forwards;
+}
+.blogger{
+    animation: blogger 2s linear forwards;
+}
+
+/* --------------------Progress Bar Animation---------------------- */
+@keyframes html{
+    100%{
+        width:80% ;
+    }
+}
+@keyframes css{
+    100%{
+        width: 65%;
+    }
+}
+@keyframes js{
+    100%{
+        width: 30%;
+    }
+}
+@keyframes sol{
+    100%{
+        width: 20%;
+    }
+}
+@keyframes python{
+    100%{
+        width: 40%;
+    }
+}
+@keyframes yt{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes seo{
+    100%{
+        width:65% ;
+    }
+}
+@keyframes blogger{
+    100%{
+        width: 50%;
+    }
+}
+
+/* ---------------------Projects Section---------------------------------------- */
+.project-section{
+    background-color: #333333;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 5rem;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.project-section h2{
+    color: #FC7F03;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 3%;
+    left: 45%;
+}
+.project-section .box-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 20px;
+    row-gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.project-section .box-container .box{
+    text-align: center;
+    margin-top: 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    width: 30rem;
+    height: 20rem;
+
+}
+.box-container .box p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+.box-container img{
+    margin-top: 0.5rem;
+    width: 25rem;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    opacity: .5;
+}
+.box-container .box button{
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #FC7F03;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: -1rem;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------hovver effect on Project section Items------------- */
+.box-container .box:hover{
+    box-shadow:1px 1px 10px 1px #959595;
+}
+.box-container .box:hover  img{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.box-container .box:hover p{
+    display: flex;
+}
+.box-container .box:hover button{
+    display: block;
+}
+.box-container .box button:hover{
+    transform:scaleX(0.9) rotate(1deg);
+}
+/* --------------------------------------------------------------------------------- */
+
+
+/* ----------------------------Contact Us page---------------------- */
+.contact-us{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow:0.5px 0.5px 5px #FC7F03;
+    background-color:#F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ----------------------------------------contact us header logo----------------------------- */
+.contact-us #contact-us-head{
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    width: 22rem;
+    height: 5rem;
+    padding: 3px;
+    color:#FC7F03;
+    box-shadow:1px 1px 10px #FC7F03;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+.contact-us label{
+    font-size: 2rem;
+
+}
+
+/* ------------------------user inputs--------------------------------- */
+.contact-us input{
+    color: white;
+    background-color: #333333;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #FC7F03;
+    border-radius: 3px;
+    margin-top: 0.3rem;
+}
+.contact-us textarea{
+    color: white;
+    background-color: #333333;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FC7F03;
+    border-radius: 3px;
+    width: 50rem;
+    height: 30rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    
+}
+/* ----------------------contact us button------------------------- */
+.contact-us #contact-us-btn{
+    width: 10rem;
+    height: 3.6rem;
+    color: white;
+    background-color: #FC7F03;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 4%;
+}
+.contact-us #contact-us-btn:hover{
+    transform: rotate(3deg);
+    box-shadow: 1px 1px 10px #FC7F03;
+}
+
+/* ------------------------------Resposive------------------------------------------------------ */
+@media only screen and (min-width: 600px) {}
+
+
+@media only screen and (min-width: 768px) {}
