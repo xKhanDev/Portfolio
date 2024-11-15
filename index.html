@@ -8,10 +8,13 @@
     <title>Potflio</title>
 </head>
 <body>
+    <div id="mobile-overlay" class="overlay">
+        <p>Please view this website on a desktop only.</p>
+    </div>
     <div class="container">
         <h2> Port <span>flio</span></h2>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#"> Home</a></li>
                 <li><a href="#about"> About</a></li>
                 <li><a href="#skills"> Skills</a></li>
@@ -21,9 +24,9 @@
             <button id="Hire-me">Hire Me</button>
         </nav>
         <div class="main-section">
-            <img id="bg" src="/image/bg.png" alt="">
-            <span> <img src="/image/myImg.png" alt=""></span>
-            <img id="roller" src="/image/roller.png" alt="">
+            <img id="bg" src="./image/bg.png" alt="">
+            <span> <img src="./image/myImg.png" alt=""></span>
+            <img id="roller" src="./image/roller.png" alt="">
 
             <div class="text-section">
                 <p class="para1">
@@ -47,7 +50,7 @@
 
         <!-- ----------------About Section----------------------------->
         <div class="about-section" id="about">
-            <img src="/image/aboutImg.png" alt="My Image">
+            <img src="./image/myImg.png" alt="My Image">
             <p>
                 Hello! My name is <span>Safeer Ullah Khan</span>, and I am a student of Software Engineering at the University of Science and Technology Township Bannu. Currently, my focus is on web development.
                 I am driven by a strong interest in <span>blockchain technology</span>. As of now, I am in the process of delving into Ethereum blockchain development. My goal is to become a skilled Blockchain developer and contribute to the advancement of this exciting field.
@@ -111,35 +114,35 @@
             <h2>Projects</h2>
                 <div class="box-container">
                     <div class="box">
-                        <div> <img src="/Project Imgs/p1.jpg" alt="Project">
+                        <div> <img src="./projectImages/p1.jpg" alt="Project">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corporis.</p>
                             <button>VISIT</button>
                         </div>
                     </div>
                     
                     <div class="box">
-                        <div> <img src="/Project Imgs/p3.jpg" alt="Project">
+                        <div> <img src="./projectImages/p2.jpg" alt="Project">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corporis.</p>
                             <button>VISIT</button>
                         </div>
                     </div>
     
                     <div class="box">
-                        <div> <img src="/Project Imgs/p4.jpg" alt="Project">
+                        <div> <img src="./projectImages/p3.jpg" alt="Project">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corporis.</p>
                             <button>VISIT</button>
                         </div>
                     </div>
     
                     <div class="box">
-                        <div> <img src="/Project Imgs/p5.jpg" alt="Project">
+                        <div> <img src="./projectImages/p4.jpg" alt="Project">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corporis.</p>
                             <button>VISIT</button>
                         </div>
                     </div>
     
                     <div class="box">
-                        <div> <img src="/Project Imgs/p6.jpg" alt="Project">
+                        <div> <img src="./projectImages/p5.jpg" alt="Project">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corporis.</p>
                             <button>VISIT</button>
                         </div>
@@ -150,7 +153,7 @@
         <!-- ------------------Contact us Page---------------------------------- -->
         <div class="contact-us" id="contact">
             <label id="contact-us-head">Contact us</label>
-            <form action="#">
+            <form class="form">
 
                 <label for="username">Name</label>
                 <input type="text" placeholder="Your Name ?" name="username">
@@ -166,5 +169,6 @@
         </div>
 
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
