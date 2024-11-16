@@ -1,12 +1,10 @@
 // script.js
-document.addEventListener("DOMContentLoaded", function () {
-    // Function to detect mobile devices
-    function isMobileDevice() {
-        return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
-    // Show overlay if on a mobile device
-    if (isMobileDevice()) {
+function checkMobile() {
+    if (isMobileDevice() || window.innerWidth <= 768) {
         // Show the overlay
         const overlay = document.getElementById("mobile-overlay");
         const container = document.querySelector(".container");
@@ -19,4 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.width = "100%";
         document.body.style.overflow = "hidden";
     }
-});
+}
+
+document.addEventListener("DOMContentLoaded", checkMobile);
+window.addEventListener("resize", checkMobile);
+
